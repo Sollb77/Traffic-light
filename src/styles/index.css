@@ -4,27 +4,20 @@
     border-radius: 50%;
 }
 
-#red {
+.SombraR {
 
-    background: red
-}
-
-#yellow {
-
-    background: yellow
-}
-
-#yellow {
-
-    background: green
-}
-
-
-
-
-#iluminado {
-    background-color: aqua;
     box-shadow: 0 0 40px red;
+}
+
+
+.SombraY {
+
+    box-shadow: 0 0 40px yellow;
+}
+
+.SombraG {
+
+    box-shadow: 0 0 40px green;
 }
 
 /*
