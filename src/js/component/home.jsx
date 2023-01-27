@@ -1,6 +1,5 @@
-
 import React from "react";
-import {useState} from react;
+import { useState } from "react";
 //include images into your bundle
 
 
@@ -8,29 +7,20 @@ import {useState} from react;
 const Home = () => {
 
     
-	const [valor1,setValor1]=useState (red)
-	const [valor2,setValor2]=useState (Amarillo)
-	const [valor3,setValor3]=useState (verde)
-    
-	  const setCambio = () => {
-		setValor1("brillante")
-   }
-     const setCambio2 = () => {
-	   setValor2("brillante")
-         }
-
-	 const setCambio3 = () => {
-			setValor3("brillante")
-			  }
+	const [change,setChange]=useState ("");
+	
+  
+	 
       
 	return (
 		<div className="text-center bg-dark">
-		  <div id="red" className="color" onClick={setCambio}></div>
-		  <div id="yellow" className="color" onClick={setCambio2}></div>
-		  <div id="green" className="color" onClick={setCambio3}></div>
-       
-
+		  <div  className={`bg-danger ${(change === "red" ? "iluminado" : "")}`} 
+		  onClick={() => setChange("red")}></div>
+		  <div  className={"bg-warning" +" " +(change === "yellow" ? "iluminado" : "")} onClick={() => setChange("yellow")}></div>
+		  <div  className={`bg-success ${(change === "green" ? "iluminado" : "")}`} onClick={() => setChange("green")}></div>
+         
 		</div>
+
 	);
 };
 

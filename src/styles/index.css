@@ -9,7 +9,7 @@
     background: red
 }
 
-#yello {
+#yellow {
 
     background: yellow
 }
@@ -19,8 +19,12 @@
     background: green
 }
 
-#brillante {
-    filter: brightness(1.75);
+
+
+
+#iluminado {
+    background-color: aqua;
+    box-shadow: 0 0 40px red;
 }
 
 /*
